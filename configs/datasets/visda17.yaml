@@ -1,0 +1,20 @@
+INPUT:
+  SIZE: (224, 224)
+  TRANSFORMS: ["normalize"]
+
+DATASET:
+  NAME: "VisDA17"
+  SOURCE_DOMAINS: ["synthetic"]
+  TARGET_DOMAINS: ["real"]
+
+TRAINER:
+  MODEL:
+    STRONG_TRANSFORMS: ["randaugment", "normalize"]
+
+MODEL:
+  BACKBONE:
+    NAME: "RN101"
+    PATH: "pretrain_model/"
+
+TEST:
+  PER_CLASS_RESULT: True

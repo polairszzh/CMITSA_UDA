@@ -1,0 +1,6 @@
+clip==1.0
+dassl==0.6.3
+matplotlib==3.6.2
+scikit_learn==1.8.0
+torch==2.11.0
+yacs==0.1.8
