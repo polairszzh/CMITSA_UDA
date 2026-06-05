@@ -3,7 +3,7 @@
 cd ..
 
 # custom config
-DATA=~/code/unida/dataset # path to dataset
+DATA=~/code/uda/dataset # path to dataset
 TRAINER=MODEL
 
 DATASET=visda17 # name of the dataset

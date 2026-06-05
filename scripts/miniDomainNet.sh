@@ -3,7 +3,7 @@
 cd ..
 
 # custom config
-DATA=~/code/unida/dataset
+DATA=~/code/uda/dataset
 TRAINER=MODEL
 
 DATASET=minidomainnet
