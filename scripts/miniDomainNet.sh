@@ -3,7 +3,9 @@
 cd ..
 
 # custom config
-DATA=~/code/uda/dataset
+DATA=${DATA:-/path/to/dataset}   # root directory holding the datasets; override with  DATA=/your/path bash miniDomainNet.sh
+GPU=${GPU:-0}                    # GPU index; override with  GPU=2 bash miniDomainNet.sh
+export CUDA_VISIBLE_DEVICES=${GPU}
 TRAINER=MODEL
 
 DATASET=minidomainnet

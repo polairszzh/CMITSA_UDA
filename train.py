@@ -88,6 +88,13 @@ def extend_cfg(cfg):
     cfg.TRAINER.MODEL.T = 1.0
     cfg.TRAINER.MODEL.ENT = 1.0
     cfg.TRAINER.MODEL.PIN = 1.0
+    # weighting over the K class prototypes in the prompt-guided loss L_PD
+    #   uniform : all prototypes weighted equally (default, Eq. 8)
+    #   pl      : only the (pseudo-)labelled prototype
+    #   topk    : the PD_TOPK most similar prototypes
+    #   prob    : weighted by the predicted probability distribution
+    cfg.TRAINER.MODEL.PD_MODE = "uniform"
+    cfg.TRAINER.MODEL.PD_TOPK = 5
     cfg.TRAINER.MODEL.TEXT = True
     cfg.TRAINER.MODEL.VISUAL = True
     cfg.TRAINER.MODEL.STRONG_TRANSFORMS = []

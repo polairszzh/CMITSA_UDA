@@ -43,9 +43,9 @@ TRAINER:
     N_CLS: 2
     CSC: False
     T: 1.0
-    TAU: 0.6
+    TAU: 0.5
     U: 1.0
     ENT: 1.0
-    PIN: 0.0
+    PIN: 0.5
     TEXT: True
     VISUAL: True
